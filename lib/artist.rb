@@ -1,3 +1,4 @@
+require 'pry'
 class Artist 
   attr_accessor :name 
   @@all = []
@@ -20,7 +21,7 @@ class Artist
   end 
   
   def genres 
-    songs.genres 
+    binding.pry 
   end 
   
 end 
