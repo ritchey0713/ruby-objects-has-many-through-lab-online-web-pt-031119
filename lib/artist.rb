@@ -20,6 +20,10 @@ class Artist
     Song.all.select{ |song| song.artist == self }
   end 
   
+  def self.find(artist_name)
+    all.find{|artist| artist.name == name}
+  end
+  
   def genres 
   end 
   
