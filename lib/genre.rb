@@ -17,7 +17,7 @@ class Genre
   
   def artists 
     Song.all.find do |song|
-       binding.pry
+       song.artist 
     end 
   end 
   
