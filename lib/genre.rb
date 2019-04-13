@@ -17,7 +17,7 @@ class Genre
   
   def artists 
     Song.all.find do |song|
-       Artist.find(song.artist) if song.genre == self
+       Artist.find(song.artist.name) if song.genre == self
     end 
   end 
   
